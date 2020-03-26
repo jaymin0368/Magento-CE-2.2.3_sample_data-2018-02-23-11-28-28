@@ -1,0 +1,38 @@
+<?php
+$hello = $block->getHelloWorld();
+$arr = $block->helloArray();
+
+?>
+<ul>
+<?php
+foreach ($arr as $key => $value)
+{
+    ?>
+    <li><?php echo $value; ?></li>
+    <?php
+}
+?>
+</ul>
+<h1><?php echo $hello; ?></h1>
+<h2><?php echo $this->getShowHello(); ?></h2>
+<h2><?php print_r($this->getShowArray()); ?></h2>
+<h3><?php echo $block->getProductName(); ?></h3>
+
+<h2>Now this all data will come from View Model</h2>
+<hr>
+<?php
+$viewModel = $block->getData('view_model');
+$helloWorld = $viewModel->getHelloWorld1();
+$helloArray = $viewModel->helloArray1();
+
+?>
+<h1><?php echo $helloWorld; ?></h1>
+<ul>
+    <?php
+    foreach ($helloArray as $key => $value)
+    {
+        ?>
+        <li><?php echo $value; ?></li>
+        <?php
+    }
+    ?>
