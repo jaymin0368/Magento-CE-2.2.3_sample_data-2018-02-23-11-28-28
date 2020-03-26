@@ -9,7 +9,7 @@
     <body>
         <referenceContainer name="content">
             <block class="SimplifiedMagento\HelloWorld\Block\HelloWorld" name="hello_world"
-                   template="SimplifiedMagento_HelloWorld::custom.phtml">
+                   template="SimplifiedMagento_HelloWorld::custom.phtml" cacheable="false">
                 <arguments>
                     <argument name="show_hello" xsi:type="string">From layout to Templates</argument>
                     <argument name="show_array" xsi:type="array">
