@@ -141,6 +141,7 @@ return array (
     'Mageplaza_Blog' => 0,
     'Shopial_Facebook' => 1,
     'SimplifiedMagento_Attribute' => 1,
+    'SimplifiedMagento_CustomAdmin' => 1,
     'SimplifiedMagento_Database' => 1,
     'SimplifiedMagento_Extension' => 1,
     'SimplifiedMagento_FirstModule' => 1,
