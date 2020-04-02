@@ -1,8 +1,44 @@
 <?php
+declare(strict_types=1);
 $hello = $block->getHelloWorld();
 $arr = $block->helloArray();
 
 ?>
+<div id="my-collapsible" data-mage-init='{"collapsible":{"animate": {
+    "duration":600,
+    "easing":"linear"
+}}}'>
+    <div data-role="title">
+        <h2>How about a collapsible widget?<button data-role="trigger">Go</button> </h2>
+    </div>
+    <div id="example" data-role="content">
+        This is the collapsible content right here!
+        This is the collapsible content right here!
+        This is the collapsible content right here!
+        This is the collapsible content right here!
+        This is the collapsible content right here!
+        This is the collapsible content right here!
+        This is the collapsible content right here!
+        This is the collapsible content right here!
+        This is the collapsible content right here!
+        This is the collapsible content right here!
+
+    </div>
+</div>
+
+<div id="my-collapsible1" data-mage-init='{"collapsible":{"animate": {
+    "duration":600,
+    "easing":"linear"
+}}}'>
+    <div data-role="title">
+        <h2>How about a collapsible widget 1?<button data-role="trigger">Go</button> </h2>
+    </div>
+    <div id="example" data-role="content">
+        <a href="<?= $block->getViewFileUrl("SimplifiedMagento_HelloWorld/example-content.html") ?>" data-ajax="true"></a>
+    </div>
+</div>
+
+
 <ul>
 <?php
 foreach ($arr as $key => $value)
@@ -38,3 +74,14 @@ $helloArray = $viewModel->helloArray1();
 
     echo rand(1,100);
     ?>
+</ul>
+<form data-mage-init='{"validation":{}}'>
+    <div class="control">
+        <input class="input-text" data-validate="{ required: true, 'validate-email': true}" id="email"
+               name="email" placeholder="<?= __('Your Email') ?>"
+               type="text"
+        />
+    </div>
+    <button type="submit" class="action primary"><?= __("Submit") ?></button>
+</form>
+
